@@ -1,0 +1,9 @@
+version: 1.4
+jobs:
+  DockerJob:
+    cmd: docker ps
+    time: "*"
+    notifyOnSuccess:
+      - type: stdout
+        data:
+          - stdout
